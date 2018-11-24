@@ -294,7 +294,6 @@ class SceptrePlan(object):
         :param change_set_name: The name of the Change Set.
         :type change_set_name: str
         :rtype: dict
-        :rtype: sceptre.stack_status.StackChangeSetStatus
         """
         self.resolve(command=self.wait_for_cs_completion.__name__)
         return self._execute(*args)
